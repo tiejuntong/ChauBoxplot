@@ -6,7 +6,7 @@ geom_C.boxplot <- function(mapping = NULL, data = NULL, geom = "boxplot",
   
   # Nested helper function to calculate Chauvenet's coefficient
   .calculate_chauvenet_coef <- function(n) {
-    qnorm(1 - 0.25 / n) / 1.35 - 0.5
+    qnorm(1 - 0.25/n)/1.35 - 0.5
   }
   
   # Nested ggproto object for the custom stat
@@ -25,9 +25,6 @@ geom_C.boxplot <- function(mapping = NULL, data = NULL, geom = "boxplot",
     inherit.aes = inherit.aes,
     params = list(
       na.rm = na.rm,
-      outlier.colour = outlier.colour,
-      outlier.shape = outlier.shape,
-      outlier.size = outlier.size,
       ...
     )
   )
