@@ -2,8 +2,7 @@ library(ggplot2)
 
 geom_C.boxplot <- function(mapping = NULL, data = NULL, geom = "boxplot",
                       position = "dodge2", na.rm = FALSE, show.legend = NA,
-                      inherit.aes = TRUE, 
-                      outlier.colour = "blue", outlier.shape = 4, outlier.size = 2, ...) {
+                      inherit.aes = TRUE, ...) {
   
   # Nested helper function to calculate Chauvenet's coefficient
   .calculate_chauvenet_coef <- function(n) {
