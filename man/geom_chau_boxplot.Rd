@@ -44,18 +44,19 @@ please refer to formula (9) in Lin et al. (2025).
 # Example 1
 library(ggplot2)
 
-rate.senior <- c(4.96, 6.30, -5.38, 1.60, 7.24, 5.26, 2.55, 5.96, 3.96, 4.19, 1.88, 4.06, 4.75, 0, 0, 2.5, 2.87, 3.00)/100
+rate.senior <- c(4.96, 6.30, -5.38, 1.60, 7.24, 5.26, 2.55, 5.96, 3.96,
+                 4.19, 1.88, 4.06, 4.75, 0, 0, 2.5, 2.87, 3.00)/100
 year <- 2007:2024
 data.senior <- data.frame(x=year, y=rate.senior)
 
 C.boxplot.senior <-
-ggplot(data.senior, aes(y=rate.senior)) +
-geom_chau_boxplot(fill="purple",width=3) +
-theme(legend.position = "none") +
-scale_x_discrete(breaks = NULL) +
-ylim(-0.057,0.077) +
-theme(plot.margin = unit(c(0, 0, 0, 0), "inches")) +
-labs(title="C.boxplot", subtitle="Senior civil servants", x="", y="")
+  ggplot(data.senior, aes(y=rate.senior)) +
+  geom_chau_boxplot(fill="purple",width=3) +
+  theme(legend.position = "none") +
+  scale_x_discrete(breaks = NULL) +
+  ylim(-0.057,0.077) +
+  theme(plot.margin = unit(c(0, 0, 0, 0), "inches")) +
+  labs(title="C.boxplot", subtitle="Senior civil servants", x="", y="")
 
 print(C.boxplot.senior)
 }

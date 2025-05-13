@@ -11,6 +11,13 @@ This package provides a modified boxplot with the new fence coefficient determin
 \references{
 Hongmei Lin, Riquan Zhang and Tiejun Tong (2025). When Tukey meets Chauvenet: a new boxplot criterion for outlier detection. Journal of Computational and Graphical Statistics, accepted.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://tiejuntong.github.io/ChauBoxplot/}
+}
+
+}
 \author{
 \strong{Maintainer}: Tiejun Tong \email{tongt@hkbu.edu.hk}
 
