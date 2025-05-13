@@ -2,8 +2,7 @@ pandoc: '3.4'
 pkgdown: 2.1.2
 pkgdown_sha: ~
 articles: {}
-last_built: 2025-05-13T15:55Z
+last_built: 2025-05-13T16:24Z
 urls:
-  reference: <a href="https://tiejuntong.github.io/ChauBoxplot/" class="underline"
-    target="_blank">https://tiejuntong.github.io/ChauBoxplot/</a>/reference
-  article: <a href="https://tiejuntong.github.io/ChauBoxplot/" class="underline" target="_blank">https://tiejuntong.github.io/ChauBoxplot/</a>/articles
+  reference: https://tiejuntong.github.io/ChauBoxplot/reference
+  article: https://tiejuntong.github.io/ChauBoxplot/articles
