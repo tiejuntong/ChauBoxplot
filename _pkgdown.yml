@@ -1,7 +1,7 @@
 template:
   bootstrap: 5
 
-url: <a href="https://tiejuntong.github.io/ChauBoxplot/" class="underline" target="_blank">https://tiejuntong.github.io/ChauBoxplot/</a>
+url: https://tiejuntong.github.io/ChauBoxplot/
 
 navbar:
   title: "Chauvenet-Type Boxplot"
