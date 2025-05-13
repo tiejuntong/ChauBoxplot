@@ -22,6 +22,12 @@ To install the `ChauBoxplot` package from GitHub, please use the following comma
 library(devtools)  
 install_github("tiejuntong/ChauBoxplot")
 
+
+## Documentation
+
+For detailed documentation and usage examples, please visit the package website <a href="https://tiejuntong.github.io/ChauBoxplot/." class="underline" target="_blank">https://tiejuntong.github.io/ChauBoxplot/.</a>
+
+
 ## Usage
 
 Below is a real example with R code of how to create a Chauvenet-type boxplot for the pay adjustment rates of senior civil servants in Hong Kong. 
