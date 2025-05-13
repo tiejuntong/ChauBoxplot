@@ -9,8 +9,8 @@ Authors@R: c(
    )
 Description: Provides a modified boxplot with a new fence coefficient determined by Lin et al. (2025). The traditional fence coefficient k=1.5 in Tukey's boxplot is replaced by a coefficient based on Chauvenet’s criterion, as described in their formula (9). Implementations are available in both base R with the function `chau_boxplot()`, and in ggplot2 with the function `geom_chau_boxplot()`.
 Maintainer: Tiejun Tong <tongt@hkbu.edu.hk>
-License: GPL-3
 URL: https://tiejuntong.github.io/ChauBoxplot/
+License: GPL-3
 Encoding: UTF-8
 RoxygenNote: 7.3.2
 Imports: 
