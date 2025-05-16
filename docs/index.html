@@ -5,14 +5,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chauvenet-Type Boxplot • ChauBoxplot</title>
+<title>`Chauvenet-Type Boxplot` • ChauBoxplot</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Chauvenet-Type Boxplot">
-<meta name="description" content="Provides a modified boxplot with a new fence coefficient determined by Lin et al. (2025). The traditional fence coefficient k=1.5 in Tukey's boxplot is replaced by a coefficient based on Chauvenet’s criterion, as described in their formula (9). Implementations are available in both base R with the function `chau_boxplot()`, and in ggplot2 with the function `geom_chau_boxplot()`.">
-<meta property="og:description" content="Provides a modified boxplot with a new fence coefficient determined by Lin et al. (2025). The traditional fence coefficient k=1.5 in Tukey's boxplot is replaced by a coefficient based on Chauvenet’s criterion, as described in their formula (9). Implementations are available in both base R with the function `chau_boxplot()`, and in ggplot2 with the function `geom_chau_boxplot()`.">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="`Chauvenet-Type Boxplot`">
+<meta name="description" content="Provides a modified boxplot with a new fence coefficient determined by Lin et al. (2025). The traditional fence coefficient k=1.5 in Tukey's boxplot is replaced by a coefficient based on Chauvenet’s criterion, as described in their formula (9). Implementations are available in both `base R` with the function chau_boxplot(), and in `ggplot2` with the function geom_chau_boxplot().">
+<meta property="og:description" content="Provides a modified boxplot with a new fence coefficient determined by Lin et al. (2025). The traditional fence coefficient k=1.5 in Tukey's boxplot is replaced by a coefficient based on Chauvenet’s criterion, as described in their formula (9). Implementations are available in both `base R` with the function chau_boxplot(), and in `ggplot2` with the function geom_chau_boxplot().">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -47,16 +47,14 @@
   <main id="main" class="col-md-9"><div class="section level2">
 <h2 id="chauboxplot">ChauBoxplot<a class="anchor" aria-label="anchor" href="#chauboxplot"></a>
 </h2>
-<p><code>ChauBoxplot</code> is an R package designed to create an improved version of the boxplot. This package implements a new fence coefficient proposed by Lin et al. (2025), replacing the traditional fence coefficient (k=1.5) in Tukey’s boxplot. The new coefficient (k_n^{Chau}) is calculated based on Chauvenet’s criterion, which is given in formula (9) in their paper.</p>
+<p><code>ChauBoxplot</code> is an R package designed to create an improved version of the boxplot. This package implements a new fence coefficient proposed by Lin et al. (2025), replacing the traditional fence coefficient <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>1.5</mn></mrow><annotation encoding="application/x-tex">k=1.5</annotation></semantics></math> in Tukey’s boxplot. The new coefficient <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><msubsup><mi>k</mi><mi>n</mi><mrow><mi>C</mi><mi>h</mi><mi>a</mi><mi>u</mi></mrow></msubsup></mrow><annotation encoding="application/x-tex">k=k_n^{Chau}</annotation></semantics></math> is calculated based on Chauvenet’s criterion, which is given in formula (9) in their paper.</p>
 </div>
 <div class="section level2">
 <h2 id="features">Features<a class="anchor" aria-label="anchor" href="#features"></a>
 </h2>
 <ul>
-<li>
-<code><a href="reference/chau_boxplot.html">chau_boxplot()</a></code>: Generates Chauvenet-type boxplots in base R. Its usage is similar to <code><a href="https://rdrr.io/r/graphics/boxplot.html" class="external-link">boxplot()</a></code>, but it employs an updated fence coefficient for more robust outlier detection.</li>
-<li>
-<code><a href="reference/geom_chau_boxplot.html">geom_chau_boxplot()</a></code>: Creates Chauvenet-type boxplots in <code>ggplot2</code>, functioning similarly to <code>geom_boxplot()</code>.</li>
+<li>chau_boxplot(): Generates Chauvenet-type boxplots in <code>base R</code>. Its usage is similar to boxplot(), but it employs an updated fence coefficient for more robust outlier detection.</li>
+<li>geom_chau_boxplot(): Creates Chauvenet-type boxplots in <code>ggplot2</code>, functioning similarly to geom_boxplot().</li>
 </ul>
 </div>
 <div class="section level2">
@@ -71,7 +69,7 @@ install_github(“tiejuntong/ChauBoxplot”)</p>
 <div class="section level2">
 <h2 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
 </h2>
-<p>For detailed documentation and usage examples, please visit the package website <a href="https://tiejuntong.github.io/ChauBoxplot/." class="underline" target="_blank"></a><a href="https://tiejuntong.github.io/ChauBoxplot/" class="uri">https://tiejuntong.github.io/ChauBoxplot/</a>.</p>
+<p>For detailed documentation and usage examples, please also visit the package website at <a href="https://github.com/tiejuntong/ChauBoxplot/" class="external-link underline" target="_blank"></a><a href="https://github.com/tiejuntong/ChauBoxplot/" class="external-link uri">https://github.com/tiejuntong/ChauBoxplot/</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
