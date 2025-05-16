@@ -4,12 +4,12 @@ title: "ChauBoxplot Package"
 
 ## ChauBoxplot
 
-`ChauBoxplot` is an R package designed to create an improved version of the boxplot. This package implements a new fence coefficient proposed by Lin et al. (2025), replacing the traditional fence coefficient \(k=1.5\) in Tukey's boxplot. The new coefficient \(k_n^{Chau}\) is calculated based on Chauvenet's criterion, which is given in formula (9) in their paper.
+`ChauBoxplot` is an R package designed to create an improved version of the boxplot. This package implements a new fence coefficient proposed by Lin et al. (2025), replacing the traditional fence coefficient $k=1.5$ in Tukey's boxplot. The new coefficient $k=k_n^{Chau}$ is calculated based on Chauvenet's criterion, which is given in formula (9) in their paper.
 
 ## Features
 
-- `chau_boxplot()`: Generates Chauvenet-type boxplots in base R. Its usage is similar to `boxplot()`, but it employs an updated fence coefficient for more robust outlier detection.
-- `geom_chau_boxplot()`: Creates Chauvenet-type boxplots in `ggplot2`, functioning similarly to `geom_boxplot()`.
+- chau_boxplot(): Generates Chauvenet-type boxplots in `base R`. Its usage is similar to boxplot(), but it employs an updated fence coefficient for more robust outlier detection.
+- geom_chau_boxplot(): Creates Chauvenet-type boxplots in `ggplot2`, functioning similarly to geom_boxplot().
 
 ## Installation
 
@@ -25,7 +25,7 @@ install_github("tiejuntong/ChauBoxplot")
 
 ## Documentation
 
-For detailed documentation and usage examples, please visit the package website <a href="https://tiejuntong.github.io/ChauBoxplot/." class="underline" target="_blank">https://tiejuntong.github.io/ChauBoxplot/.</a>
+For detailed documentation and usage examples, please also visit the package website at <a href="https://github.com/tiejuntong/ChauBoxplot/" class="underline" target="_blank">https://github.com/tiejuntong/ChauBoxplot/.</a>
 
 
 ## Usage
